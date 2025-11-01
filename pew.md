@@ -119,3 +119,85 @@ $10-250K - set aside for small business
    - reflection/analyzing your successes/failures
 3. relationships
 4. consistent action
+
+### Pathway to Become Procurement Ready
+
+- not everything mentioned is completely relevant
+
+#### Three Levels to Readiness
+
+1. Business Ready
+
+- established biz
+- established/validated products & services
+- established marketing & sales plan/process
+- established team (& capacity to scale for performance)
+- solid leadership
+- solid reputation
+- financially sound w/ access to capital for funding future contract performance!!!
+- willingness to continuously learn, build relationships, commit, make needed investments
+
+2. Agency or Prime Ready
+
+- vendor profile (if required)
+  - register in sam.gov - req for federal contracts
+  - state & local reqs vary
+- adapt marketing & sales processes to align with prospect's procurement process
+- obtain small biz certifications for which eligible
+- activate prospecting service
+- create basic marketing materials - biz cards, capability statement, website
+
+3. Opportunity Ready
+
+- use market research techniques to learn more about the agency, the people, active contracts, and future opportunities. Everything you can!!!
+- build own forecast of opportunities & begin working on it now
+- study historical competitions & prepare in advance
+  - who are the incumbants?
+  - who are the players?
+- conduct SWOT analysis against previous solicitation (if available). What are your showstoppers if that solicitation were on the street today?
+  - what "additional factors" required to be fully opportunity-ready?
+- learn how to submit a compliant offer & practice your skills
+- seek help early & often, and document everything you learn along the way
+
+### Seven Tips for Success
+
+- do your homework (market research)
+- know where to look (prospecting)
+  - sam.gov
+  - bid match (APEX)
+  - subcontracting
+  - IDIQs
+  - ask around - build network, keep conversations open
+- forecast & study opportunities early
+  - bid match (APEX) - RFIs, sources sought, draft solicitations
+  - use agency procurement forecast
+  - build own forecast
+  - attend industry days, conferences, site visits, etc
+  - engage in conversation w/ industry peers, buyers, facility managers, engineers, OSDBU reps, etc
+  - study historical competitions & solicitations
+- learn about teaming & mentor protege programs
+  - teaming training on govology
+  - connect & build relationships w/ strong partners
+  - talk to ppl who understand teaming:
+    - APEX
+    - attorney
+    - industry partners
+    - SBA business opportunity specialist in area
+- learn the rules - knowledge is power
+  - limitations on subcontracting/exceptions
+  - similarly situated entities
+  - affiliation rules & exemptions
+  - teaming, joint ventures, SBAs mentor-protege program
+  - sole source & other certification advantages
+- build & leverage mastermind alliance
+  - g-fund mastermind
+  - OSDU/SADBU
+  - industry insiders/teaming partners
+  - SMEs
+  - gov employees
+  - end users / end customer
+  - dept. level decision maker
+  - contracting & purchasing staff
+  - govology trusted resources page
+- build your own roadmap for success
+  -
