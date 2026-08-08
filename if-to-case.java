@@ -9,6 +9,6 @@ class Foo {
             case "bop" -> 5;
             case "boom" -> 6;
             default -> 7;
-        }
+        };
     }
 }
