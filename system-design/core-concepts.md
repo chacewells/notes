@@ -255,3 +255,72 @@ Primarily concerned with:
 - s2s comms in microservices
 - resource-intensive operations that might time out
 - any network call that may fail or become slow
+
+# Deep Dives
+
+## Numbers to Know
+
+### Caching
+
+- Memory: up to 1TB on memory-optimized instances
+- Latency:
+  - Reads: < 1ms same region
+  - Writes: < 1ms same AZ, 1-2ms cross AZ (same region)
+- Throughput: 100k-200k+ ops/sec for in-mem caches (Redis/memcached)
+
+#### When to scale:
+
+- Dataset Size: Approaching 1TB in size
+- Throughput: Sustained throughput of 100k+ ops/second
+- Read Latency: Requirements below 0.5ms consistently
+
+### Databases
+
+- storage:
+  - single instance: up to 64TiB
+  - Aurora: up to 256TiB
+- latency:
+  - reads: 1-5ms cached, 5-30ms for disk
+  - writes: 5-15ms commit latency
+- throughput:
+  - reads: ^50k TPS single-node
+  - writes: 10-20k TPS single-node
+- cxns: 5-20k concurrent
+
+#### When to shard:
+
+- dataset size: approaching or exceeding 50 TiB
+- write throughput: exceeding 10k TPS
+- read latency: reqs below 5ms for uncached data
+- geo distribution: x-region replication or distribution
+- backup/recovery: backup windows stretching to hours or operationally impractical
+
+### Application Servers
+
+- cxns: 100k+ concurrent per instance
+- CPU: 8-64 cores
+- mem: 100s of GB common, multi-TB instances available
+- network: 25 Gbps standard, ^50-100 Gbps hi-perf
+- startup time: 10s of secs to minutes
+
+#### When to scale:
+
+- CPU: > 70-80%
+- response latency: > SLA or critical thresholds
+- mem usage: trending > 70-80%
+- net bandwidth: approaching instance limits
+
+### Message Queues
+
+- throughput: ^ 1M messages/sec per broker
+- latency: 1-5ms e2e same region
+- msg size: 1KB-10MB
+- storage: ^50TB per broker
+- retention: weeks-months
+
+#### When to scale:
+
+- throughput: nearing 800k msgs/sec
+- partition count: approaching 200k per cluster
+- consumer lag: growing/impacting real-time processing
+- x-region replication: geographic redundancy required
