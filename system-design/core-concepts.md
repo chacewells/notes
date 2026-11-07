@@ -256,6 +256,43 @@ Primarily concerned with:
 - resource-intensive operations that might time out
 - any network call that may fail or become slow
 
+# API Design
+
+## API Types
+
+- REST
+  - resources & nouns
+  - HTTP verbs as actions
+- GraphQL
+- RPC
+
+## Resource Modeling
+
+- Use plural nouns
+- If nested things are required, use paths
+- If nested things not required, use query params
+
+## HTTP Methods
+
+- GET - retrieve data w/o changing anything (`GET /events/{id}`, `GET /events`)
+- POST - create a new resource; server assigns ID & returns it (`POST /events/{id}/bookings`)
+- PUT - replace entire resource w/ what you send, or create it if missing (`PUT /users/{id}` w/ full object)
+- PATCH - update part of a resource (`PATCH /users/{id}` w/ just `email`)
+- DELETE - remove a resource (`DELETE /bookings/{id}`)
+
+### Idempotency
+
+- idempotent = repeated requests leave server in same state (response codes may differ, e.g. DELETE 204 -> 404)
+- idempotent: GET, PUT, DELETE
+- not guaranteed: POST (each call creates a new resource), PATCH (depends on impl - "set email" yes, "append to list" no)
+- matters for retries after network failures - no duplicate bookings; see idempotency keys under Timeouts & retry/backoff
+
+## Passing Data To APIs
+
+- path params - identify the resource; use when resource can't be identified without it
+- query params - filter a collection, page/sort
+- request body - data to send to server, or populate resource with
+
 # Deep Dives
 
 ## Numbers to Know
